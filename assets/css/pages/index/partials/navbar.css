@@ -1,34 +1,33 @@
-#menu {
-   background-color: #fff;
-   border-bottom: 1px solid #e5e5e5;
-   box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
-   position: fixed;
-   top: 0;
+header {
+   background: #F5F5F5;
    width: 100%;
-   z-index: 1000;
-   height: 116px;
-}
-
-#menu-options {
-   justify-content: flex-start;
-   align-items: flex-start;
+   min-height: 120px;
+   min-height: auto;
    display: flex;
-   margin-left: 116px;
-   margin-right: 116px;
-   background: #e5e5e5;
+   flex-wrap: wrap;
 }
 
-/*#menu-options{
-   width: 100%;
-   height: 100%;
-   padding-left: 166px;
-   padding-right: 166px;
-   background: #f5f5f517;
-   justify-content: space-between;
-   align-items: center;
-}*/
+#logo-menu {
+   width: 47.73px;
+   position: relative;
+   height: 48px;
+}
 
-#menu-options a {
+
+
+#container-menu {
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+
+#options-list li {
+   display: inline;
+}
+
+#options-list a {
    color: #1E1F27;
    font-family: "Inter", sans-serif;
    font-size: 20px;
@@ -37,5 +36,46 @@
    line-height: 32px;
    word-wrap: break-word;
    text-decoration: none;
+   white-space: nowrap;
    margin-right: 20px;
+}
+
+.phone {
+   position: relative;
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: flex-end;
+   gap: 12px;
+   text-align: left;
+   font-size: 20px;
+   color: #1e1f27;
+   font-family: Inter;
+   font-weight: 700;
+   white-space: nowrap;
+}
+
+.phone-icon {
+   width: 24px;
+   height: 24px;
+}
+
+#div-donate {
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   gap: 32px;
+   max-width: 393px;
+}
+
+.menu {
+   display: inline-flex;
+   flex-direction: row;
+   align-items: center;
+   height: 120px;
+   padding: 0 20px;
+   gap: 20px;
+   align-content: center;
+   margin-right: 85px;
 }
