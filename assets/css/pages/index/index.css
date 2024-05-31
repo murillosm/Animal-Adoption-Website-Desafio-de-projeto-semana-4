@@ -33,14 +33,14 @@
    padding: 0px 116px;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1700px) {
    .div-icon {
-      padding: 0px 32px;
+      width: 100%;
       height: 2px;
    }
 
    .divider {
-      padding: 0px 32px;
+      padding: 0px 16px;
    }
 
 }

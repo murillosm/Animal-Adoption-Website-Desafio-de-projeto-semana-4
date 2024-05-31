@@ -101,13 +101,19 @@ header {
 }
 
 /* Media Queries para Responsividade */
+@media (max-width: 1500px) {
+   .menu {
+      margin-right: 10px;
+   }
+}
+
 @media (max-width: 1300px) {
    .menu {
       margin-right: 0;
    }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
    header {
       flex-direction: row;
       align-items: center;
@@ -115,53 +121,23 @@ header {
       padding: 32px 16px;
    }
 
-   .menu {
-      flex-direction: row;
-      justify-content: center;
-      align-content: space-evenly;
-      width: 100%;
-      margin-right: 0;
-      height: auto;
-   }
-
-   .menu-options {
-      flex-direction: row;
-      align-items: center;
-      justify-content: center;
-      width: 370px;
-      text-align: center;
-   }
-
-   #container-menu {
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-wrap: wrap;
-   }
-
    #options-list {
-      flex-direction: row;
-      width: 100%;
       gap: 10px;
-      align-items: center;
-      justify-content: center;
-   }
-
-   #options-list li {
-      flex-direction: row;
-      display: flex;
-      align-items: center;
       justify-content: center;
    }
 
    #options-list a {
-      font-size: 20px;
       line-height: 50px;
-      display: flex;
+   }
+}
+
+@media (max-width: 768px) {
+   #options-list li {
       flex-direction: row;
-      align-items: center;
-      justify-content: center;
+   }
+
+   #options-list a {
+      font-size: 20px;
    }
 
    .donate-button {
