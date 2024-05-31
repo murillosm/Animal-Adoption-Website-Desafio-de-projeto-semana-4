@@ -1,0 +1,183 @@
+#stats-block {
+   width: 100%;
+   position: relative;
+   background-color: #1e1f27;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   padding: 80px 0px;
+   box-sizing: border-box;
+}
+
+#stats-block .main-content {
+   width: 1208px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   gap: 80px;
+}
+
+
+#stats-block .text-information {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   gap: 80px;
+}
+
+#stats-block .with-your-help {
+   margin: 0;
+   width: 1208px;
+   position: relative;
+   font-size: 56px;
+   line-height: 120%;
+   display: inline-block;
+   font-family: "Poppins", sans-serif;
+   color: #fff;
+   text-align: center;
+}
+
+#stats-block .stats {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   width: 1208px;
+   gap: 40px;
+}
+
+#stats-block .stats .animals-rescued {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+}
+
+#stats-block .data-values {
+   width: 376px;
+   position: relative;
+   font-size: 64px;
+   letter-spacing: -0.02em;
+   line-height: 120%;
+   display: inline-block;
+   font-family: Poppins;
+   color: #f8db46;
+   text-align: center;
+}
+
+#stats-block .data-text {
+   width: 376px;
+   position: relative;
+   font-size: 32px;
+   letter-spacing: -0.02em;
+   line-height: 160%;
+   display: inline-block;
+   font-family: Poppins;
+   color: #fff;
+   text-align: center;
+}
+
+#stats-block .carousel {
+   width: 100%;
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   gap: 80px;
+}
+
+#stats-block .carousel-select {
+   width: 100%;
+   position: relative;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-between;
+}
+
+#stats-block .icon {
+   width: 24px;
+   position: relative;
+   height: 24px;
+}
+
+#stats-block .arrow {
+   width: 44px;
+   position: relative;
+   border-radius: 21px;
+   background-color: #f5f5f5;
+   height: 44px;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   border: none;
+}
+
+#stats-block #dots {
+   position: relative;
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   gap: 16px;
+}
+
+#dots .ellipse {
+   width: 16px;
+   position: relative;
+   border-radius: 50%;
+   background-color: #ffffff33;
+   height: 16px;
+}
+
+#dots .ellipse-checked {
+   width: 16px;
+   position: relative;
+   border-radius: 50%;
+   background-color: #fff;
+   height: 16px;
+}
+
+.img-icon {
+   width: 250px;
+   position: relative;
+   height: 250px;
+   object-fit: cover;
+}
+
+.image-resolution {
+   position: relative;
+   height: 250px;
+   width: 250px;
+   overflow: hidden;
+   flex-shrink: 0;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+}
+
+.div-img1 {
+   border-radius: 32px;
+   background-color: #f1d06e;
+}
+
+.div-img2 {
+   border-radius: 32px 250px 250px 250px;
+   background-color: #04c27f;
+}
+
+.div-img3 {
+   border-radius: 32px;
+   background-color: #f5f5f5;
+}
+
+.div-img4 {
+   border-radius: 250px 32px 250px 250px;
+   background-color: #5758f1;
+}

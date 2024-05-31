@@ -11,7 +11,7 @@
    color: #1e1f27;
 }
 
-#main-content {
+#main-screen .main-content {
    width: 100%;
    max-width: 1208px;
    display: flex;
@@ -113,7 +113,7 @@
 
 @media (max-width: 1251px) {
 
-   #main-content {
+   #main-screen .main-content {
       flex: 1;
       flex-direction: column-reverse;
       gap: 20px;
@@ -132,7 +132,7 @@
       padding: 32px 16px;
    }
 
-   #main-content {
+   #main-screen .main-content {
       flex-direction: column;
    }
 
