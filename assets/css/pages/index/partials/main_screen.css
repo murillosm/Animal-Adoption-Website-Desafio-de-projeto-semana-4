@@ -3,24 +3,23 @@
    position: relative;
    background-color: #f5f5f5;
    display: flex;
-   flex-direction: row;
+   flex-direction: column;
    align-items: center;
    justify-content: center;
    padding: 80px 0px 120px;
-   box-sizing: border-box;
    text-align: left;
-   font-size: 64px;
    color: #1e1f27;
-   font-family: Poppins;
 }
 
 #main-content {
-   width: 1208px;
+   width: 100%;
+   max-width: 1208px;
    display: flex;
    flex-direction: row;
    align-items: center;
    justify-content: center;
    gap: 40px;
+   margin: 0 auto;
 }
 
 #info-block {
@@ -42,7 +41,7 @@
    font-size: 32px;
 }
 
-#image {
+#image-pets {
    width: 584px;
    height: 616px;
    display: flex;
@@ -66,7 +65,7 @@
 h1 {
    width: 100%;
    position: relative;
-   font-size: 64px;
+   font-size: 48px;
    letter-spacing: -0.02em;
    line-height: 120%;
    display: inline-block;
@@ -80,6 +79,7 @@ h3 {
    position: relative;
    letter-spacing: -0.02em;
    line-height: 160%;
+   font-family: "Poppins", sans-serif;
 }
 
 #text-screen {
@@ -90,4 +90,101 @@ h3 {
    font-weight: 500;
    font-family: Inter;
    color: #37383f;
+}
+
+#text-block {
+   width: 100%;
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: center;
+   gap: 24px;
+   text-align: left;
+   font-size: 64px;
+   color: #1e1f27;
+   font-family: "Poppins", sans-serif;
+}
+
+#image-dog {
+   display: none;
+}
+
+@media (max-width: 1251px) {
+
+   #main-content {
+      flex: 1;
+      flex-direction: column-reverse;
+      gap: 20px;
+      justify-content: center;
+   }
+
+   #image-pets {
+      flex-direction: column;
+   }
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+   #main-screen {
+      flex-direction: row;
+      padding: 32px 16px;
+   }
+
+   #main-content {
+      flex: 1;
+      flex-direction: column;
+      gap: 20px;
+      justify-content: center;
+   }
+
+   #info-block, #image-pets {
+      width: 100%;
+      max-width: none;
+
+   }
+
+   #cta-block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+   }
+
+   h1 {
+      font-size: 55px;
+   }
+
+   h3 {
+      font-size: 23px;
+   }
+
+   #text-screen {
+      font-size: 26px;
+      position: relative;
+      display: inline-block;
+      text-align: left;
+   }
+
+   .donate-button, .adopt-button {
+      width: 100%;
+      justify-content: center;
+      font-size: 18px;
+   }
+
+   .group-of-buttons {
+      flex-direction: column;
+      gap: 16px;
+   }
+
+   #image-pets {
+      display: none;
+   }
+
+   #image-dog {
+      display: flex;
+      width: 268px;
+      height: 268px;
+   }
+
 }
