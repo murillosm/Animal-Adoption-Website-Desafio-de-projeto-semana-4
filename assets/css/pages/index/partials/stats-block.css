@@ -44,12 +44,10 @@
    width: 100%;
    max-width: 1208px;
    display: flex;
-   flex-direction: row;
-   justify-content: center;
    gap: 40px;
 }
 
-#stats-block .stats {
+#stats-block .stats .animals-rescued {
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -172,14 +170,6 @@
       flex-direction: column;
       gap: 20px;
    }
-
-   #stats-block .carousel-select {
-      flex-direction: row;
-      justify-content: center;
-      gap: 20px;
-      align-content: center;
-      width: 50%;
-   }
 }
 
 /* Media Queries para Responsividade */
@@ -198,7 +188,7 @@
       gap: 40px;
    }
 
-   #stats-block .stats {
+   #stats-block .stats .animals-rescued {
       max-width: none;
    }
 
@@ -225,7 +215,7 @@
       height: 36px;
    }
 
-   #stats-block .img-icon{
+   #stats-block .img-icon {
       width: 200px;
       height: 200px;
    }
@@ -246,7 +236,7 @@
       font-size: 18px;
    }
 
-   #stats-block .img-icon{
+   #stats-block .img-icon {
       width: 150px;
       height: 150px;
    }
