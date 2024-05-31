@@ -1,0 +1,198 @@
+/* Cabeçalho */
+header {
+   background: #F5F5F5;
+   width: 100%;
+   min-height: 120px;
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: space-between;
+   padding: 10px 20px;
+}
+
+#logo-menu {
+   width: 47.73px;
+   height: 48px;
+   position: relative;
+}
+
+#logo {
+   padding-bottom: 0;
+}
+
+/* Container do Menu */
+#container-menu {
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+
+/* Menu */
+.menu {
+   position: relative;
+   display: inline-flex;
+   flex-direction: row;
+   align-items: center;
+   height: 120px;
+   padding: 0 20px;
+   align-content: space-between;
+   margin-right: 85px;
+}
+
+.menu-options {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+}
+
+#options-list {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 20px;
+}
+
+#options-list li {
+   display: inline-block;
+}
+
+#options-list a {
+   color: #1E1F27;
+   font-family: "Inter", sans-serif;
+   font-size: 20px;
+   font-weight: 700;
+   line-height: 32px;
+   text-decoration: none;
+   white-space: nowrap;
+   margin-right: 20px;
+   word-wrap: break-word;
+}
+
+/* Seção do Telefone */
+.phone {
+   position: relative;
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: flex-end;
+   gap: 12px;
+   font-size: 20px;
+   color: #1e1f27;
+   font-family: "Inter", sans-serif;
+   font-weight: 700;
+   white-space: nowrap;
+}
+
+.phone-icon {
+   width: 24px;
+   height: 24px;
+}
+
+/* Seção de Doação */
+#div-donate {
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   gap: 32px;
+   max-width: 393px;
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 1300px) {
+   .menu {
+      margin-right: 0;
+   }
+}
+
+@media (max-width: 768px) {
+   header {
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      padding: 32px 16px;
+   }
+
+   .menu {
+      flex-direction: row;
+      justify-content: center;
+      align-content: space-evenly;
+      width: 100%;
+      margin-right: 0;
+      height: auto;
+   }
+
+   .menu-options {
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      width: 370px;
+      text-align: center;
+   }
+
+   #container-menu {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+   }
+
+   #options-list {
+      flex-direction: row;
+      width: 100%;
+      gap: 10px;
+      align-items: center;
+      justify-content: center;
+   }
+
+   #options-list li {
+      flex-direction: row;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+
+   #options-list a {
+      font-size: 20px;
+      line-height: 50px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+   }
+
+   .donate-button {
+      width: 100%;
+      max-width: none;
+   }
+
+   #div-donate {
+      flex-direction: wrap;
+      gap: 64px;
+      padding-top: 0px;
+   }
+
+   .phone {
+      justify-content: center;
+      width: 100%;
+      font-size: 20px;
+   }
+}
+
+@media (max-width: 480px) {
+   #options-list a {
+      font-size: 20px;
+   }
+
+   .donate-button {
+      font-size: 20px;
+      padding: 12px 24px;
+   }
+
+   .phone {
+      font-size: 20px;
+   }
+}
