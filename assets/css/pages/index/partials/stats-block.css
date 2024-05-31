@@ -49,7 +49,7 @@
    gap: 40px;
 }
 
-#stats-block .stats .animals-rescued {
+#stats-block .stats {
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -89,14 +89,16 @@
    flex-direction: row;
    align-items: center;
    justify-content: center;
+   justify-content: space-between;
 }
 
-#stats-block .carousel-select .image-resolution {
-   display: none;
-}
-
-#stats-block .carousel-select .image-resolution:first-child {
+#stats-block .select {
+   width: auto;
    display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   gap: 20px;
 }
 
 #stats-block .icon {
@@ -115,7 +117,7 @@
    border: none;
 }
 
-#stats-block #dots {
+#dots {
    width: 100%;
    display: flex;
    flex-direction: row;
@@ -138,44 +140,50 @@
    background-color: #fff;
 }
 
-.img-icon {
+#stats-block .img-icon {
    width: 250px;
    height: 250px;
    object-fit: cover;
 }
 
-.image-resolution {
-   width: 250px;
-   height: 250px;
-   overflow: hidden;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   flex-shrink: 0;
-}
 
-.div-img1 {
+#stats-block .div-img1 {
    border-radius: 32px;
    background-color: #f1d06e;
 }
 
-.div-img2 {
+#stats-block .div-img2 {
    border-radius: 32px 250px 250px 250px;
    background-color: #04c27f;
 }
 
-.div-img3 {
+#stats-block .div-img3 {
    border-radius: 32px;
    background-color: #f5f5f5;
 }
 
-.div-img4 {
+#stats-block .div-img4 {
    border-radius: 250px 32px 250px 250px;
    background-color: #5758f1;
 }
 
+@media only screen and (max-width: 1200px) {
+   #stats-block .select {
+      flex-direction: column;
+      gap: 20px;
+   }
+
+   #stats-block .carousel-select {
+      flex-direction: row;
+      justify-content: center;
+      gap: 20px;
+      align-content: center;
+      width: 50%;
+   }
+}
+
 /* Media Queries para Responsividade */
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) and (min-width: 480px) {
    #stats-block {
       padding: 80px 32px;
    }
@@ -190,7 +198,7 @@
       gap: 40px;
    }
 
-   #stats-block .stats .animals-rescued {
+   #stats-block .stats {
       max-width: none;
    }
 
@@ -202,17 +210,14 @@
       font-size: 24px;
    }
 
-   #stats-block .carousel-select {
+   #stats-block .select {
       flex-direction: column;
       gap: 20px;
    }
 
-   #stats-block .carousel-select .image-resolution {
-      display: none;
-   }
-
-   #stats-block .carousel-select .image-resolution:first-child {
-      display: flex;
+   #stats-block .carousel-select {
+      flex-direction: row;
+      gap: 20px;
    }
 
    #stats-block .arrow {
@@ -220,13 +225,13 @@
       height: 36px;
    }
 
-   .img-icon, .image-resolution {
+   #stats-block .img-icon{
       width: 200px;
       height: 200px;
    }
 }
 
-@media (max-width: 480px) {
+@media only screen and (max-width: 480px) {
    #stats-block .with-your-help {
       font-size: 36px;
       line-height: 100%;
@@ -241,7 +246,7 @@
       font-size: 18px;
    }
 
-   .img-icon, .image-resolution {
+   #stats-block .img-icon{
       width: 150px;
       height: 150px;
    }

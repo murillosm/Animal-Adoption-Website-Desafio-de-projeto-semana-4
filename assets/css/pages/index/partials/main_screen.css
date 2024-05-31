@@ -111,7 +111,7 @@
 }
 
 
-@media (max-width: 1251px) {
+@media only screen and (max-width: 1251px) {
 
    #main-screen .main-content {
       flex: 1;
@@ -126,61 +126,61 @@
 }
 
 /* Media Queries para Responsividade */
-@media (max-width: 768px) {
-   #main-screen {
-      flex-direction: row;
-      padding: 32px 16px;
+@media only screen and (max-width: 768px) and (min-width: 480px) {
+      #main-screen {
+         flex-direction: row;
+         padding: 32px 16px;
+      }
+
+      #main-screen .main-content {
+         flex-direction: column;
+      }
+
+      #info-block, #image-pets {
+         width: 100%;
+         max-width: none;
+
+      }
+
+      #cta-block {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+      }
+
+      #info-block h1 {
+         font-size: 54px;
+      }
+
+      #info-block h3 {
+         text-align: center;
+         line-height: 50px;
+      }
+
+      #text-screen {
+         font-size: 26px;
+      }
+
+      .donate-button, .adopt-button {
+         width: 100%;
+         justify-content: center;
+         font-size: 18px;
+      }
+
+      .group-of-buttons {
+         flex-direction: column;
+         gap: 16px;
+      }
+
+      #image-pets {
+         display: none;
+      }
+
+      #image-dog {
+         display: flex;
+         width: 268px;
+         height: 268px;
+      }
+
    }
-
-   #main-screen .main-content {
-      flex-direction: column;
-   }
-
-   #info-block, #image-pets {
-      width: 100%;
-      max-width: none;
-
-   }
-
-   #cta-block {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-   }
-
-   #info-block h1 {
-      font-size: 54px;
-   }
-
-   #info-block h3 {
-      text-align: center;
-      line-height: 50px;
-   }
-
-   #text-screen {
-      font-size: 26px;
-   }
-
-   .donate-button, .adopt-button {
-      width: 100%;
-      justify-content: center;
-      font-size: 18px;
-   }
-
-   .group-of-buttons {
-      flex-direction: column;
-      gap: 16px;
-   }
-
-   #image-pets {
-      display: none;
-   }
-
-   #image-dog {
-      display: flex;
-      width: 268px;
-      height: 268px;
-   }
-
-}
