@@ -1,0 +1,87 @@
+#adopt-info-block {
+   width: 100%;
+   position: relative;
+   background-color: #f5f5f5;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   padding: 80px 0px 120px;
+   box-sizing: border-box;
+   color: #1e1f27;
+   font-family: Poppins;
+}
+
+#container-adopt {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 100%;
+}
+
+#container-adopt figure.image {
+   width: 584px;
+   height: 616px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+#container-adopt .image img {
+   position: absolute;
+}
+
+#container-adopt .img-dog {
+   position: absolute;
+   border-radius: 600px;
+   width: 377px;
+   height: 584px;
+   background-color: #5758F1;
+   overflow: hidden;
+   display: flex;
+   align-items: start;
+   justify-content: center;
+
+}
+
+#container-adopt .img-dog img {
+   position: relative;
+   width: 530px;
+   transform: translate(-4%, 2%);
+}
+
+#container-adopt .img-cat {
+   position: relative;
+   width: 268px;
+   height: 268px;
+   border-radius: 24px 134px 134px 134px;
+   background-color: #f1d06e;
+   overflow: hidden;
+   object-fit: cover;
+   border: solid 6px #f5f5f5;
+   transform: translate(150.25px, 160px);
+}
+
+#container-adopt .img-collar {
+   position: relative;
+   height: 152.3px;
+   transform: translate(-46px, 50px);
+}
+
+#container-adopt .img-bone {
+   position: relative;
+   height: 108.2px;
+   transform: translate(-200px, -230px);
+}
+
+/*@media only screen and (max-width: 768px) {
+   #adopt-info-block {
+      padding: 32px;
+   }
+
+   #container-adopt {
+      width: 100%;
+      display: flex;
+   }
+
+}*/
