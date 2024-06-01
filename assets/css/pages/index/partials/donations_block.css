@@ -13,7 +13,7 @@
    font-family: "Poppins", sans-serif;
 }
 
-#donations-block {
+
    .main-content {
       width: 1208px;
       display: flex;
@@ -83,7 +83,8 @@
 
    .icon {
       position: absolute;
-      margin: 40px 0px 245px 215px;
+      left: 270px;
+      top: 60px;
    }
 
    .icon-shelter {
@@ -109,11 +110,66 @@
    .icon-fosters {
       width: 56.69px;
       height: 49.57px;
-      margin: 40px 0px 230px 215px;
    }
 
    .icon-food {
       width: 64.84px;
       height: 29.37px;
+      top: 80px;
+   }
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+   #donations-block .main-content {
+      width: 100%;
+      padding: 0 20px;
+   }
+
+   .cards {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+   }
+}
+
+@media (max-width: 768px) {
+   #title-donations {
+      font-size: 48px;
+   }
+
+   .cards {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(6, 1fr);
+   }
+
+   .title-card {
+      font-size: 28px;
+   }
+
+   .text-card {
+      font-size: 18px;
+   }
+
+   .icon {
+      position: static;
+      margin: 20px 0;
+   }
+}
+
+@media (max-width: 480px) {
+   #title-donations {
+      font-size: 36px;
+   }
+
+   .title-card {
+      font-size: 24px;
+   }
+
+   .text-card {
+      font-size: 16px;
+   }
+
+   .cards-donations {
+      padding: 20px;
    }
 }
