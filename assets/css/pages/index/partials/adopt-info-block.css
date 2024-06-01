@@ -159,16 +159,77 @@
    transform: translate(-200px, -230px);
 }
 
-/*------fim imagem------*/
-
-/*@media only screen and (max-width: 768px) {
+/* Media Queries for Responsiveness */
+@media (max-width: 1100px) {
    #adopt-info-block {
-      padding: 32px;
+      padding: 80px 16px;
    }
 
-   #container-adopt {
+   #adopt-info-block .content-block {
       width: 100%;
       display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+   }
+}
+
+@media (max-width: 768px) {
+   #adopt-info-block {
+      padding: 80px 16px;
    }
 
-}*/
+   #adopt-info-block .content-block {
+      width: 100%;
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+   }
+
+   #adopt-info-block .text-block h3 {
+      font-size: 24px;
+   }
+
+   #adopt-info-block .text-block {
+      font-size: 24px;
+      padding: 0 0 0 32px;
+   }
+
+   #adopt-info-block .list-regulation li {
+      font-size: 20px;
+   }
+
+   #adopt-info-block .adopt-button {
+      width: 200px;
+      height: 56px;
+      font-size: 16px;
+   }
+
+   #container-adopt .img-dog {
+      width: 290px;
+      height: 490px;
+   }
+
+   #container-adopt .img-dog img {
+      width: 450px;
+   }
+
+   #container-adopt .img-cat {
+      width: 220px;
+      height: 220px;
+      transform: translate(105px, 140px);
+   }
+
+   #container-adopt .img-collar {
+      height: 110px;
+      transform: translate(-50px, 45px);
+   }
+
+   #container-adopt .img-bone {
+      height: 70px;
+      transform: translate(-150px, -180px);
+   }
+}
