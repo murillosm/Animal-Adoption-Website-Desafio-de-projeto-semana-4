@@ -127,3 +127,28 @@
    margin: 0 auto;
 }
 
+@media (max-width: 1240px) {
+   #difference-block {
+      padding: 32px;
+   }
+
+   #difference-block .main-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+   }
+
+   #difference-block .cards {
+      width: 70%;
+      gap: 40px 0px;
+      place-items: center;
+      grid-template-columns: repeat(2, 1fr);
+   }
+}
+
+@media (max-width: 800px) {
+   #difference-block .cards {
+      grid-template-columns: 1fr;
+   }
+}
