@@ -71,6 +71,10 @@ header #options-list a {
    word-wrap: break-word;
 }
 
+#options-list a:hover {
+   text-decoration: underline;
+}
+
 /* Seção do Telefone */
 header .phone {
    position: relative;
