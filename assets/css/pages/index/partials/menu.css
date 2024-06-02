@@ -10,18 +10,18 @@ header {
    padding: 10px 20px;
 }
 
-#logo-menu {
+header #logo-menu {
    width: 47.73px;
    height: 48px;
    position: relative;
 }
 
-#logo {
+header #logo {
    padding-bottom: 0;
 }
 
 /* Container do Menu */
-#container-menu {
+header #container-menu {
    width: 100%;
    display: flex;
    align-items: center;
@@ -30,7 +30,7 @@ header {
 }
 
 /* Menu */
-.menu {
+header .menu {
    position: relative;
    display: inline-flex;
    flex-direction: row;
@@ -41,25 +41,25 @@ header {
    margin-right: 85px;
 }
 
-.menu-options {
+header .menu-options {
    display: flex;
    flex-direction: row;
    align-items: center;
    justify-content: center;
 }
 
-#options-list {
+header #options-list {
    display: flex;
    flex-wrap: wrap;
    gap: 20px;
 }
 
-#options-list li {
+header #options-list li {
    display: inline-block;
    letter-spacing: -0.02em;
 }
 
-#options-list a {
+header #options-list a {
    color: #1E1F27;
    font-family: "Inter", sans-serif;
    font-size: 20px;
@@ -72,7 +72,7 @@ header {
 }
 
 /* Seção do Telefone */
-.phone {
+header .phone {
    position: relative;
    width: 100%;
    display: flex;
@@ -87,13 +87,13 @@ header {
    white-space: nowrap;
 }
 
-.phone-icon {
+header .phone-icon {
    width: 24px;
    height: 24px;
 }
 
 /* Seção de Doação */
-#div-donate {
+header #div-donate {
    display: inline-flex;
    align-items: center;
    justify-content: center;
@@ -103,13 +103,13 @@ header {
 
 /* Media Queries para Responsividade */
 @media only screen and (max-width: 1500px) {
-   .menu {
+   header .menu {
       margin-right: 10px;
    }
 }
 
 @media only screen and (max-width: 1300px) {
-   .menu {
+   header .menu {
       margin-right: 0;
    }
 }
@@ -122,37 +122,37 @@ header {
       padding: 32px 16px;
    }
 
-   #options-list {
+   header #options-list {
       gap: 10px;
       justify-content: center;
    }
 
-   #options-list a {
+   header #options-list a {
       line-height: 50px;
    }
 }
 
 @media only screen and (max-width: 768px) {
-   #options-list li {
+   header #options-list li {
       flex-direction: row;
    }
 
-   #options-list a {
+   header #options-list a {
       font-size: 20px;
    }
 
-   .donate-button {
+   header .donate-button {
       width: 100%;
       max-width: none;
    }
 
-   #div-donate {
+   header #div-donate {
       flex-direction: wrap;
       gap: 64px;
       padding-top: 0px;
    }
 
-   .phone {
+   header .phone {
       justify-content: center;
       width: 100%;
       font-size: 20px;
@@ -160,16 +160,16 @@ header {
 }
 
 @media only screen and (max-width: 480px) {
-   #options-list a {
+   header #options-list a {
       font-size: 20px;
    }
 
-   .donate-button {
+   header .donate-button {
       font-size: 20px;
       padding: 12px 24px;
    }
 
-   .phone {
+   header .phone {
       font-size: 20px;
    }
 }

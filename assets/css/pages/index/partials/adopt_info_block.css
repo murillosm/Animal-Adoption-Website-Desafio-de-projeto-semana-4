@@ -95,7 +95,7 @@
 }
 
 #container-adopt figure.image {
-   width: 584px;
+   max-width: 584px;
    height: 616px;
    display: flex;
    align-items: center;

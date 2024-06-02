@@ -150,40 +150,147 @@
    z-index: 0;
 }
 
-/* Responsividade */
-@media (max-width: 1200px) {
-   #adopt-block .text-block {
+@media (max-width: 1400px) {
+   #adopt-block .button-group {
       flex-direction: column;
-      align-items: center;
-      gap: 40px;
    }
 
-   #adopt-block .cat-img,
-   #adopt-block .dog-img {
-      left: auto;
-      right: auto;
-      position: relative;
+   #adopt-block .dog-img, #adopt-block .cat-img {
+      width: 225px;
+      height: 300px;
+      left: calc(50% + 290px);
+   }
+
+   #adopt-block .cat-img {
+      left: calc(50% - 520px);
+   }
+
+   #adopt-block .vector-cat, #adopt-block .vector-dog {
+      width: 225px;
+      height: 225px;
+   }
+
+   #adopt-block .fish-icon {
+      top: -50px;
+      left: 100px;
+      width: 83.7px;
+      height: 49.9px;
+   }
+
+   #adopt-block .bone-icon {
+      right: 100px;
+      bottom: 230px;
+      width: 92.2px;
+      height: 60.45px;
+   }
+}
+
+@media (max-width: 1100px) {
+   #adopt-block .button-group {
+      flex-direction: column;
+   }
+
+   #adopt-block .dog-img, #adopt-block .cat-img {
+      width: 200px;
+      height: 250px;
+      left: calc(50% + 190px);
+   }
+
+   #adopt-block .cat-img {
+      left: calc(50% - 440px);
+   }
+
+   #adopt-block .vector-cat, #adopt-block .vector-dog {
+      width: 200px;
+      height: 200px;
+   }
+
+   #adopt-block .fish-icon {
+      top: -40px;
+      left: 90px;
+      width: 74.4px;
+      height: 44.55px;
+   }
+
+   #adopt-block .bone-icon {
+      right: 90px;
+      bottom: 190px;
+      width: 81.6px;
+      height: 53.3px;
+   }
+}
+
+@media (max-width: 900px) {
+   #adopt-block .button-group {
+      flex-direction: column;
+   }
+
+   #adopt-block .dog-img, #adopt-block .cat-img {
+      width: 175px;
+      height: 225px;
+      left: calc(50% + 150px);
+   }
+
+   #adopt-block .cat-img {
+      left: calc(50% - 410px);
+   }
+
+   #adopt-block .vector-cat, #adopt-block .vector-dog {
+      width: 175px;
+      height: 175px;
+   }
+
+   #adopt-block .fish-icon {
+      top: -35px;
+      left: 75px;
+      width: 65.8px;
+      height: 39.2px;
+   }
+
+   #adopt-block .bone-icon {
+      right: 75px;
+      bottom: 170px;
+      width: 72.8px;
+      height: 47.6px;
    }
 }
 
 @media (max-width: 768px) {
-   #adopt-block .button-group {
-      flex-direction: column;
-      gap: 24px;
-   }
-   
-   #adopt-block .text-block {
-      flex-direction: column;
-      align-items: center;
-      gap: 20px;
+   #adopt-block .dog-img{
+      width: 150px;
+      height: 200px;
+      left: calc(50% + 90px);
    }
 
-   #adopt-block .cat-img,
-   #adopt-block .dog-img {
-      left: auto;
-      right: auto;
-      position: relative;
-      width: 100%;
-      height: auto;
+   #adopt-block .cat-img {
+      width: 150px;
+      height: 200px;
+      left: calc(50% - 240px);
+   }
+
+   #adopt-block .vector-cat, #adopt-block .vector-dog {
+      width: 150px;
+      height: 150px;
+   }
+
+   #adopt-block .fish-icon {
+      top: -30px;
+      left: 70px;
+      width: 55.8px;
+      height: 33.25px;
+   }
+
+   #adopt-block .bone-icon {
+      right: 65px;
+      bottom: 150px;
+      width: 61.45px;
+      height: 40.3px;
+   }
+
+   #adopt-block .button-group button {
+      display: flex;
+      height: 64px;
+      width: 220px;
+      font-size: 18px;
    }
 }
