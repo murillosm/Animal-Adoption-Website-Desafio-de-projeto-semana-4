@@ -127,22 +127,26 @@ header #div-donate {
    }
 
    header #options-list {
-      gap: 10px;
       justify-content: center;
+      gap: 10px;
    }
 
    header #options-list a {
       line-height: 50px;
+      gap: 10px;
    }
 }
 
 @media only screen and (max-width: 768px) {
    header #options-list li {
       flex-direction: row;
+      gap: 10px;
    }
+
 
    header #options-list a {
       font-size: 20px;
+      gap: 0px;
    }
 
    header .donate-button {
@@ -166,6 +170,7 @@ header #div-donate {
 @media only screen and (max-width: 480px) {
    header #options-list a {
       font-size: 20px;
+      gap: 10px;
    }
 
    header .donate-button {
@@ -175,5 +180,10 @@ header #div-donate {
 
    header .phone {
       font-size: 20px;
+   }
+
+   header #div-donate {
+      display: flex;
+      gap: 30px;
    }
 }

@@ -182,7 +182,7 @@
 }
 
 /* Media Queries para Responsividade */
-@media only screen and (max-width: 768px) and (min-width: 480px) {
+@media only screen and (max-width: 768px) {
    #main-screen {
       flex-direction: row;
       padding: 32px 16px;
@@ -195,7 +195,6 @@
    #info-block, #image-pets {
       width: 100%;
       max-width: none;
-
    }
 
    #cta-block {
