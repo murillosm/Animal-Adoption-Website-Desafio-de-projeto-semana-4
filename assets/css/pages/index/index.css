@@ -5,7 +5,7 @@
 @import './partials/difference_block.css';
 @import './partials/adopt_block.css';
 @import './partials/newsletter_block.css';
-@import './partials/footer.css';
+@import '../../global/footer.css';
 @import "../../global/menu.css";
 @import "../../global/buttons.css";
 @import "../../global/divider.css";
