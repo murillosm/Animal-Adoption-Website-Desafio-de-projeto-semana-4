@@ -1,6 +1,5 @@
 #adopt-block {
    width: 100%;
-   position: relative;
    background-color: #1e1f27;
    display: flex;
    flex-direction: column;
@@ -11,6 +10,7 @@
    text-align: center;
    color: #fff;
    font-family: "Poppins", sans-serif;
+   position: relative;
 }
 
 #adopt-block .config {
@@ -19,6 +19,7 @@
    align-items: center;
    justify-content: center;
    width: 100%;
+   position: relative;
 }
 
 #adopt-block .title-yellow {
@@ -63,6 +64,7 @@
    font-weight: 700;
    letter-spacing: -0.02em;
    font-family: "Poppins", sans-serif;
+   z-index: 1;
 }
 
 #adopt-block .btn-view-adoptables {
@@ -131,7 +133,7 @@
    flex-direction: column;
    align-items: flex-end;
    justify-content: flex-end;
-   z-index: 2;
+   z-index: 0;
 }
 
 #adopt-block .cat-img {
@@ -256,7 +258,7 @@
 }
 
 @media (max-width: 768px) {
-   #adopt-block .dog-img{
+   #adopt-block .dog-img {
       width: 150px;
       height: 200px;
       left: calc(50% + 90px);

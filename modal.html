@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+
+   <link rel="stylesheet" href="assets/css/pages/modal/adopt-modal.css">
+</head>
+<body>
+
+   <button id="openModal" class="openModal">Open Modal</button>
+
+   <div id="fade" class="hide"></div>
+   <div id="adopt-modal" class="hide">
+      <div class="modal-content">
+         <div class="wrap">
+            <h1>Apply to Adopt</h1>
+            <b class="text-description">Small text description can goes here</b>
+         </div>
+         <form action="/submit" method="post">
+            <label for="full-name">Nome Completo:</label>
+            <input type="text" id="full-name" name="full-name">
+         
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+         
+            <label for="dob">Data de Nascimento:</label>
+            <div class="dob-select">
+               <select id="day" name="day">
+                  <option value="">Dia</option>
+               </select>
+               <select id="month" name="month">
+                  <option value="">Mês</option>
+               </select>
+               <select id="year" name="year" required>
+                  <option value="">Ano</option>
+               </select>
+            </div>
+         
+            <button class="buttonModal" id="buttonAdont" type="submit">I wanna Adopt!</button>
+            <button class="buttonModal cancelar" id="cancelar" type="button">Cancel</button>
+         </form>
+      </div>
+   </div>
+   <script src="assets/js/adopt-modal.js"></script>
+</body>
+</html>
