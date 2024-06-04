@@ -36,3 +36,7 @@ body {
    display: inline-block;
    text-align: center;
 }
+
+body button{
+   cursor: pointer;
+}

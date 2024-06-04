@@ -7,7 +7,7 @@
       <title>Home</title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" href="assets\css\pages\index\index.css">
-      <link rel="stylesheet" href="assets/css/pages/modal/adopt-modal.css">
+      <link rel="stylesheet" href="assets/css/pages/modal/modal.css">
    </head>
    <body id="desktop-page">
 
@@ -21,7 +21,7 @@
                <nav class="menu-options">
                   <menu id="options-list">
                      <li class="option"><a href="#" lang="en">Rescue сenter</a></li>
-                     <li class="option"><a href="#" lang="en">Apply to adopt</a></li>
+                     <li class="option adoptButton"><a href="#" lang="en">Apply to adopt</a></li>
                      <li class="option"><a href="#" lang="en">Volunteer</a></li>
                      <li class="option"><a href="#" lang="en">Ways to give</a></li>
                      <li class="option"><a href="#" lang="en">Events</a></li>
@@ -53,8 +53,8 @@
                   <img id="image-dog" src="assets/images/pages/main-screen/Dog_Img.png">
                   <h3>Your Gift Helps Save Lives</h3>
                   <menu class="group-of-buttons">
-                     <button class="donate-button button-formt"><img class="icon-heart" src="assets/images/global/Icon-heart.svg">Donate</button>
-                     <button class="adopt-button button-formt"><img class="icon-shape" src="assets/images/pages/main-screen/Shape.svg">Apply to Adopt</img></button>
+                     <button class="donateButton donate-button button-formt"><img class="icon-heart" src="assets/images/global/Icon-heart.svg">Donate</button>
+                     <button class="adoptButton adopt-button button-formt"><img class="icon-shape" src="assets/images/pages/main-screen/Shape.svg">Apply to Adopt</img></button>
                   </menu>
                </div>
             </div>
@@ -180,7 +180,7 @@
          </div>
       </section>
 
-      <!--bloco de adoção-->
+      <!--informação de adoção-->
       <section id="adopt-info-block">
          <div class="main-content">
             <h2 id="title-adopt-info" class="title">Adoption information</h2>
@@ -207,7 +207,7 @@
                         <li>Be ready to adopt within 7-10 days</li>
                      </ul>
                   </div>
-                  <button class="adopt-button button-formt">Apply to Adopt</button>
+                  <button class="adoptButton adopt-button button-formt">Apply to Adopt</button>
                </div>
             </div>
          </div>   
@@ -271,7 +271,7 @@
                   <h3>Browse our adorable adoptables</h3>
                   <div class="button-group">
                      <button class="btn-view-adoptables">View Adoptables</button>
-                     <button class="adopt-button">Apply to Adopt</button>
+                     <button class="adoptButton adopt-button">Apply to Adopt</button>
                   </div>
                </div>
             </div>
@@ -372,6 +372,7 @@
 
 
       <div id="fade" class="hide"></div>
+      /* Modal de adoção */
       <div id="adopt-modal" class="hide">
          <div class="modal-content">
             <div class="wrap">
@@ -381,25 +382,29 @@
             <form class="form-modal" action="/submit" method="post">
                <label for="email">EMAIL<b class="alert">*</b></label>
                <input type="email" id="email" name="email" placeholder="Enter your email">
+               <div class="error" id="emailError"></div>
       
                <label for="full-name">FULL NAME<b class="alert">*</b></label>
                <input type="text" id="full-name" name="full-name" placeholder="Enter Your name">
+               <div class="error" id="fullNameError"></div>
       
-               <label for="dob">DATE OF BIRTH<b class="alert">*</b></label>
-               <div class="dob-select">
+               <label for="dob-select">DATE OF BIRTH<b class="alert">*</b></label>
+               <div id="dob-select" class="dob-select">
                   <select id="day" name="day">
                      <option value="">Day</option>
                   </select>
                   <select id="month" name="month">
                      <option value="">Month</option>
                   </select>
-                  <select id="year" name="year" required>
+                  <select id="year" name="year">
                      <option value="">Year</option>
                   </select>
                </div>
+               <div class="error" id="dobError"></div>
+      
                <div id="privacy">
                   <input type="checkbox" id="terms" name="terms">
-                  <label for="terms-label">
+                  <label for="terms">
                      <div class="text">
                         <b>I agree with </b>
                         <a class="privacy-policy">Privacy Policy</a>
@@ -408,6 +413,7 @@
                      </div>
                   </label>
                </div>
+               <div class="error" id="termsError"></div>
                <button class="buttonModal" id="buttonAdont" type="submit">
                   <img src="assets/images/global/Shape.svg" alt="">
                   <b>I wanna Adopt!</b>
@@ -419,8 +425,48 @@
             </form>
          </div>
       </div>
+
+      /* Modal de doação */
+      <div id="donate-modal" class="hide">
+         <div class="modal-content">
+            <h1>Choose your Donate</h1>
+            <form class="form-modal" action="/submit" method="post">
+               <label for="emailDonate">EMAIL<b class="alert">*</b></label>
+               <input type="email" id="emailDonate" name="emailDonate" placeholder="Enter your email">
+               <div class="error" id="emailDonateError"></div>
       
-      <script src="assets/js/index.js" async defer></script>
+               <label for="donateValue">HOW MUCH CAN YOU HELP?<b class="alert">*</b></label>
+               <input type="text" id="donateValue" name="donateValue" placeholder="R$ 0,00">
+               <div class="error" id="donateValueError"></div>
+      
+               <label for="radios-paren">PAYMENT METHOD<b class="alert">*</b></label>
+               <div id="radios-paren" class="radios-paren">
+                  <input type="radio" id="pix" name="payment" value="pix">
+                  <label for="pix">Pix</label>
+                  <input type="radio" id="credit" name="payment" value="credit">
+                  <label for="credit">Credit Card</label>
+                  <input type="radio" id="payPal" name="payment" value="payPal">
+                  <label for="payPal">Pay Pal</label>
+                  
+               </div>
+
+
+               <div class="error" id="radiosError"></div>
+               
+               <button class="buttonModal" id="confirmDonate" type="submit">
+                  <img src="assets/images/global/Icon-heart.svg" alt="">
+                  <b>I wanna Help!</b>
+               </button>
+               <button class="buttonModal cancelar" id="cancelarDonate" type="button">
+                  <img src="assets/images/global/CaretLeft.svg" alt="">
+                  <b>Cancel</b>
+               </button>
+            </form>
+         </div>
+      </div>
+      
+      <script src="assets/js/adopt-modal.js"></script>
+      <script src="assets/js/index.js"></script>
    </body>
 </html>
 

@@ -139,17 +139,6 @@
 }
 
 
-
-/* #privacy input[type="checkbox"] {
-   background: url(../../../../images/global/check.svg);
-   width: 20px;
-   height: 20px;
-}
-
-#privacy input[type="checkbox"]:checked {
-   background: url(../../../../images/global/check.svg);
-} */
-
 #privacy .privacy-policy:hover {
    text-decoration: underline;
 }
@@ -246,7 +235,7 @@
    z-index: 1;
 }
 
-/* #adopt-modal.show {
+#adopt-modal.show {
    left: 50%;
 }
 
@@ -257,4 +246,4 @@
 
 #adopt-modal.hide {
    left: 100%;
-} */
+}
