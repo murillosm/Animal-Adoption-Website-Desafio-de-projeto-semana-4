@@ -7,6 +7,7 @@
    <title>Success Page</title>
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <link rel="stylesheet" href="../assets/css/pages/adoptables_page/style_adotable_page.css">
+   <link rel="stylesheet" href="../assets/css/pages/modal/modal.css">
 </head>
 
 <body>
@@ -19,7 +20,7 @@
             <nav class="menu-options">
                <menu id="options-list">
                   <li class="option"><a href="#" lang="en">Rescue сenter</a></li>
-                  <li class="option"><a href="#" lang="en">Apply to adopt</a></li>
+                  <li class="option adoptButton"><a href="#" lang="en">Apply to adopt</a></li>
                   <li class="option"><a href="#" lang="en">Volunteer</a></li>
                   <li class="option"><a href="#" lang="en">Ways to give</a></li>
                   <li class="option"><a href="#" lang="en">Events</a></li>
@@ -175,7 +176,105 @@
       </div>
    </footer>
 
+   <div id="fade" class="hide"></div>
+   
+   <div id="adopt-modal" class="hide">
+      <div class="modal-content">
+         <div class="wrap">
+            <h1>Apply to Adopt</h1>
+            <b class="text-description">Small text description can goes here</b>
+         </div>
+         <form class="form-modal" action="/submit" method="post">
+            <label for="email">EMAIL<b class="alert">*</b></label>
+            <input type="email" id="email" name="email" placeholder="Enter your email">
+            <div class="error" id="emailError"></div>
+   
+            <label for="full-name">FULL NAME<b class="alert">*</b></label>
+            <input type="text" id="full-name" name="full-name" placeholder="Enter Your name">
+            <div class="error" id="fullNameError"></div>
+   
+            <label for="dob-select">DATE OF BIRTH<b class="alert">*</b></label>
+            <div id="dob-select" class="dob-select">
+               <select id="day" name="day">
+                  <option value="">Day</option>
+               </select>
+               <select id="month" name="month">
+                  <option value="">Month</option>
+               </select>
+               <select id="year" name="year">
+                  <option value="">Year</option>
+               </select>
+            </div>
+            <div class="error" id="dobError"></div>
+   
+            <div id="privacy">
+               <input type="checkbox" id="terms" name="terms">
+               <label for="terms">
+                  <div class="text">
+                     <b>I agree with </b>
+                     <a class="privacy-policy">Privacy Policy</a>
+                     <b> and </b>
+                     <a class="privacy-policy">Terms of Conditions</a>
+                  </div>
+               </label>
+            </div>
+            <div class="error" id="termsError"></div>
+            <button class="buttonModal" id="buttonAdont" type="submit">
+               <img src="assets/images/global/Shape.svg" alt="">
+               <b>I wanna Adopt!</b>
+            </button>
+            <button class="buttonModal cancelar" id="cancelar" type="button">
+               <img src="assets/images/global/CaretLeft.svg" alt="">
+               <b>Cancel</b>
+            </button>
+         </form>
+      </div>
+   </div>
+   
+   <div id="fade2" class="hide"></div>
+   
+   <div id="donate-modal" class="hide">
+      <div class="modal-content">
+         <h1>Choose your Donate</h1>
+         <form class="form-modal" action="/submit" method="post">
+            <label for="emailDonate">EMAIL<b class="alert">*</b></label>
+            <input type="email" id="emailDonate" name="emailDonate" placeholder="Enter your email">
+            <div class="error" id="emailDonateError"></div>
+   
+            <label for="donateValue">HOW MUCH CAN YOU HELP?<b class="alert">*</b></label>
+            <input type="text" id="donateValue" name="donateValue" placeholder="R$ 0,00">
+            <div class="error" id="donateValueError"></div>
+   
+            <label for="radios-paren">PAYMENT METHOD<b class="alert">*</b></label>
+            <div id="radios-paren" class="radios-paren">
+               <input type="radio" id="pix" name="payment" value="pix">
+               <label for="pix">Pix</label>
+               <input type="radio" id="credit" name="payment" value="credit">
+               <label for="credit">Credit Card</label>
+               <input type="radio" id="payPal" name="payment" value="payPal">
+               <label for="payPal">Pay Pal</label>
+   
+            </div>
+   
+   
+            <div class="error" id="radiosError"></div>
+   
+            <button class="buttonModal" id="confirmDonate" type="submit">
+               <img src="assets/images/global/Icon-heart.svg" alt="">
+               <b>I wanna Help!</b>
+            </button>
+            <button class="buttonModal cancelar" id="cancelarDonate" type="button">
+               <img src="assets/images/global/CaretLeft.svg" alt="">
+               <b>Cancel</b>
+            </button>
+         </form>
+      </div>
+   </div>
+   
    <script src="../assets/js/buttons.js"></script>
+   <script src="../assets/js/adopt_modal.js"></script>
+   <script src="../assets/js/donate_modal.js"></script>
+   <script src="../assets/js/index.js"></script>
 </body>
 
 </html>

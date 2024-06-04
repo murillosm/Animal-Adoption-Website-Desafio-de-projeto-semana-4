@@ -28,24 +28,6 @@ function birthdateSelect() {
       yearSelect.appendChild(option);
    }
 }
-// Função para abrir e fechar o modal de adoção
-// function adoptModal() {
-//    const openModal = document.querySelector("#openModal");
-//    const cancelar = document.querySelector(".cancelar");
-//    const adoptModal = document.querySelector("#adopt-modal");
-//    const fade = document.querySelector("#fade");
-
-//    const toggleModal = () => {
-//       adoptModal.classList.toggle("show");
-//       adoptModal.classList.toggle("hide");
-//       fade.classList.toggle("hide");
-//    }
-
-//    [openModal, cancelar, fade].forEach(element => {
-//       element.addEventListener('click', () => toggleModal());
-//    });
-// };
-
 
 // Validar os campos antes de enviar o formulário
 function validateForm() {

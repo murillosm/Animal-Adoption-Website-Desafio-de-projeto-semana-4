@@ -201,7 +201,7 @@
 
 
 
-#fade {
+#fade2 {
    position: fixed;
    top: 0;
    left: 0;
@@ -215,7 +215,7 @@
    left: 50%;
 }
 
-#donate-modal.hide, #fade.hide {
+#donate-modal.hide, #fade2.hide {
    opacity: 0;
    pointer-events: none;
 }
