@@ -18,28 +18,44 @@
             <h1>Apply to Adopt</h1>
             <b class="text-description">Small text description can goes here</b>
          </div>
-         <form action="/submit" method="post">
-            <label for="full-name">Nome Completo:</label>
-            <input type="text" id="full-name" name="full-name">
-         
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email">
-         
-            <label for="dob">Data de Nascimento:</label>
-            <div class="dob-select">
+         <form class="form-modal" action="/submit" method="post">
+            <label for="email" >EMAIL<b class="alert">*</b></label>
+            <input type="email" id="email" name="email" placeholder="Enter your email">
+
+            <label for="full-name">FULL NAME<b class="alert">*</b></label>
+            <input type="text" id="full-name" name="full-name" placeholder="Enter Your name">
+
+            <label for="dob">DATE OF BIRTH<b class="alert">*</b></label>
+            <div id="dob-select" class="dob-select">
                <select id="day" name="day">
-                  <option value="">Dia</option>
+                  <option value="">Day</option>
                </select>
                <select id="month" name="month">
-                  <option value="">Mês</option>
+                  <option value="">Month</option>
                </select>
                <select id="year" name="year" required>
-                  <option value="">Ano</option>
+                  <option value="">Year</option>
                </select>
             </div>
-         
-            <button class="buttonModal" id="buttonAdont" type="submit">I wanna Adopt!</button>
-            <button class="buttonModal cancelar" id="cancelar" type="button">Cancel</button>
+            <div id="privacy">
+               <input type="checkbox" id="terms" name="terms">
+               <label for="terms">
+                  <div class="text">
+                     <b>I agree with </b>
+                     <a class="privacy-policy">Privacy Policy</a>
+                     <b> and </b>
+                     <a class="privacy-policy">Terms of Conditions</a>
+                  </div>
+               </label>
+            </div>
+            <button class="buttonModal" id="buttonAdont" type="submit">
+               <img src="assets/images/global/Shape.svg" alt="">
+               <b>I wanna Adopt!</b>
+            </button>
+            <button class="buttonModal cancelar" id="cancelar" type="button">
+               <img src="assets/images/global/CaretLeft.svg" alt="">
+               <b>Cancel</b>
+            </button>
          </form>
       </div>
    </div>

@@ -20,6 +20,13 @@
    line-height: normal;
 }
 
+body {
+   font-family: "Poppins", sans-serif;
+   background-color: #f0f0f0;
+   height: 100vh;
+   margin: 0;
+}
+
 .title {
    width: 100%;
    position: relative;
